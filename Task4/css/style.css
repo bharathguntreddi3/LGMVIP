@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  color: #333;
+  text-decoration: none;
+}
+
+.todo-item .remove-icon {
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.theme-toggle button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.theme-toggle button i {
+  color: #555;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle button:hover i {
+  color: #999;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .container {
+  background-color: #444;
+}
+
+.dark-theme h1 {
+  color: #eee;
+}
+
+.dark-theme .todo-item span {
+  color: #eee;
+}
+
+footer {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 20px 0;
+  /* Increase the vertical padding */
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 20px;
+}
+
+footer a {
+  color: #ff9500;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer b {
+  color: #ff9500;
+}
+footer a:hover {
+    text-decoration: underline;
+  }
