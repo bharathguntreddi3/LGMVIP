@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registration-form" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <div class="checkbox-group">
+                <p>Gender:</p>
+                <label for="male">
+          <input type="checkbox" id="male" name="gender[]" value="male"> Male
+        </label>
+                <label for="female">
+          <input type="checkbox" id="female" name="gender[]" value="female"> Female
+        </label>
+                <label for="other">
+          <input type="checkbox" id="other" name="gender[]" value="other"> Other
+        </label>
+            </div>
+
+            <div class="checkbox-group">
+                <p>Skills:</p>
+                <label for="html">
+          <input type="checkbox" id="html" name="skills[]" value="HTML"> HTML
+        </label>
+                <label for="css">
+          <input type="checkbox" id="css" name="skills[]" value="CSS"> CSS
+        </label>
+                <label for="javascript">
+          <input type="checkbox" id="javascript" name="skills[]" value="JavaScript"> JavaScript
+        </label>
+                <label for="python">
+          <input type="checkbox" id="python" name="skills[]" value="Python"> Python
+        </label>
+                <label for="sql">
+          <input type="checkbox" id="sql" name="skills[]" value="SQL"> SQL
+        </label>
+            </div>
+
+            <div class="button-group">
+                <input type="submit" value="Enroll">
+                <input type="button" value="Clear" onclick="clearForm()">
+            </div>
+            <footer>
+              <p>Designed by
+                <b>Bharath Guntreddi 🤞</b></p>
+              <div class="social-icons">
+                <a href="https://github.com/bharathguntreddi3"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bharath-guntreddi-a2215a227/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/bharath.guntreddi.1"><i class="fab fa-facebook"></i></a>
+              </div>
+            </footer>
+        </form>
+    </div>
+
+    <div class="output" id="output"></div>
+
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
